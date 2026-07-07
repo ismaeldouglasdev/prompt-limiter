@@ -1,0 +1,4 @@
+# Prompt Limiter - Dependências
+# Nenhuma necessária para uso básico
+# Para contagem precisa de tokens (opcional):
+# tiktoken

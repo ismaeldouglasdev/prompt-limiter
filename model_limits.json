@@ -1,0 +1,17 @@
+{
+  "models": {
+    "groq/llama-3.3-70b-versatile": {"tpm": 12000, "rpm": 30, "context": 8192},
+    "groq/llama-3.1-8b-instant": {"tpm": 30000, "rpm": 30, "context": 131072},
+    "groq/qwen/qwen3-32b": {"tpm": 30000, "rpm": 30, "context": 131072},
+    "kr/claude-sonnet-4.5": {"tpm": 400000, "rpm": 1000, "context": 200000},
+    "nvidia/minimaxai/minimax-m3": {"tpm": 1000000, "rpm": 500, "context": 128000},
+    "cf/@cf/meta/llama-3.3-70b-instruct-fp8-fast": {"tpm": 180000, "rpm": 1500, "context": 8192},
+    "ollama/gpt-oss:120b": {"tpm": 999999999, "rpm": 999999999, "context": 128000}
+  },
+  "default_limits": {"tpm": 30000, "rpm": 60, "context": 8192},
+  "compression_strategies": {
+    "truncate": "Corta do início (mantém fim)",
+    "summarize": "Sumariza seção inicial",
+    "split": "Divide em múltiplas calls"
+  }
+}
